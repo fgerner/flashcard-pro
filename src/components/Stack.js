@@ -8,7 +8,7 @@ class Stack extends Component {
         const {title, cards} = this.props.stack;
         return (
             <div>
-                <Link to="/">Home</Link>
+                <Link className={'link-home'} to="/"><h4>Home</h4></Link>
                 <h3>{title}</h3>
                 <br />
                 {
@@ -24,7 +24,7 @@ class Stack extends Component {
 }
 
 function mapStateToProps(state) {
-    return {stack: state};
+    return {stack: state.stack};
 }
 
 export default connect(mapStateToProps, null)(Stack);
