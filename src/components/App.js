@@ -10,7 +10,7 @@ class App extends Component {
                 <hr/>
                 <StackList/>
                 <hr />
-                <Link to='stack_form'><h4>Create new stack</h4></Link>
+                <Link to='stack_form'><h4>Create New Stack</h4></Link>
             </div>
         )
 
