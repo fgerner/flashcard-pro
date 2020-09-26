@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import {Button, Form, FormControl, FormGroup, FormLabel} from 'react-bootstrap';
 import {addStack} from "../actions";
 
-class StackForm extends Component {
+export class StackForm extends Component {
     constructor() {
         super();
         this.state = {
@@ -32,7 +32,7 @@ class StackForm extends Component {
     render() {
         return (<div>
             <Link to={'/'} className={'link-home'}><h4>Home</h4></Link>
-            <h4>Create a new stack</h4>
+            <h4>Create a New Stack</h4>
             <br/>
             <Form inline>
                 <FormGroup>
